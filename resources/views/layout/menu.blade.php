@@ -77,7 +77,9 @@
             <a href="#">Ofertas</a>
         </div>
     </div>
-    <script src="/scripts/main.js"></script>
+    <script src="/js/main.js"></script>
+
+    @yield('content')
 
 </body>
 
