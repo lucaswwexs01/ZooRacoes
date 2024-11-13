@@ -20,9 +20,9 @@
                 <!--Altura da imagem está mudando o tamanho do padding-->
             </a>
 
-            <div class="wrapper-search">
-                <label for="search-input">
-                    <span class="material-symbols-outlined"> Search </span>
+            <div class="wrapper-search" style="overflow: hidden">
+                <label for="search-input" style="overflow: hidden">
+                    <span class="material-symbols-outlined" style="overflow: hidden">Search</span>
                 </label>
                 <input type="text" id="search-input" placeholder="Pesquisar" />
             </div>

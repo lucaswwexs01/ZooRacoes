@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+
   }
 
   :root {
@@ -46,6 +48,7 @@
   /*Barra de pesquisa*/
 
   .wrapper-search {
+    overflow-y: hidden;
     display: flex;
     align-items: center;
     border: 1px solid #cccccc;
@@ -248,3 +251,255 @@
       width: 100%;
     }
   }
+
+  /* Home topo */
+
+
+  .h3-banner{
+    overflow-y: hidden;
+    position: absolute;
+    font-size: 1.9em;
+    font-weight: bold;
+    margin-top: 2em;
+    margin-left: 12em;
+    word-wrap: break-word;
+  }
+  .texto-gradiente {
+    overflow-y: hidden;
+    position: absolute;
+    left: 4.4em;
+    font-size: 4.4em;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    background-image: linear-gradient(#214E0E,#3A7D1A,#56B92D);
+    background-clip: text;
+    -webkit-background-clip:text ;
+    color: transparent;
+
+  }
+
+  .paragrafo-gradiente{
+    position: absolute;
+    left: 13em;
+    margin-top: 1em;
+    font-size: 1.5em;
+    background-image: linear-gradient(#214E0E,#3A7D1A,#56B92D);
+    background-clip: text;
+    -webkit-background-clip:text ;
+    color: transparent;
+
+  }
+
+  .dog-image{
+    max-width: 100%;
+    position: absolute;
+    bottom: 24em;
+  }
+
+
+
+  .botao-explore {
+    position: absolute;
+    background-color: #2DA475;
+    color: white;
+    border: none;
+    padding: 0.8rem 4rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2em;
+    margin-left: 20em;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius:100px;
+  }
+
+  .texto-gradiente, .paragrafo-gradiente, .h3-banner,.botao-explore {
+    position: relative;
+
+    z-index: 1;
+  }
+
+  .botao-explore:hover {
+    background-color: #3e8e41;
+
+  }
+
+  @media (max-width: 1100px) {
+    .dog-image {
+      display: none; /* Esconde a imagem completamente */
+    }
+  }
+ @media(max-width:800px){
+    .responsive{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left:-20em;
+
+    }
+ }
+
+ @media(max-width:624px){
+    .responsive{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left:-20em;
+
+    }
+
+    .texto-gradiente{
+
+        font-size: 3em;
+        margin-left: 120px;
+    }
+    .paragrafo-gradiente{
+        margin-left:60px;
+    }
+
+    .h3-banner{
+        left: 30px;
+        bottom: 5px;
+    }
+
+ }
+
+ @media(max-width:482px){
+    .responsive{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left:-20em;
+
+    }
+
+    .texto-gradiente{
+
+        font-size: 2.6em;
+        margin-left: 127px;
+    }
+    .paragrafo-gradiente{
+        margin-left:43px;
+    }
+
+    .h3-banner{
+        left: 40px;
+        bottom: 5px;
+    }
+ }
+
+ @media(max-width:482px){
+    .responsive{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left:-20em;
+
+    }
+
+    .texto-gradiente{
+
+        font-size: 2.6em;
+        margin-left: 90px;
+    }
+    .paragrafo-gradiente{
+        margin-left:10px;
+    }
+
+    .h3-banner{
+        left: 23px;
+        bottom: 5px;
+
+ }
+}
+
+@media(max-width:395px)
+{
+    .responsive{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left:-20em;
+
+    }
+
+    .texto-gradiente{
+
+        font-size: 2em;
+        margin-left: 120px;
+    }
+    .paragrafo-gradiente{
+        margin-left:35px;
+        font-size: 13px;
+
+
+
+    }
+
+    .h3-banner{
+        left: 23px;
+        bottom: 5px;
+
+ }
+}
+
+@media(max-width:341px)
+{
+    .responsive{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left:-20em;
+
+    }
+
+    .texto-gradiente{
+
+        font-size: 1.5em;
+        margin-left: 145px;
+    }
+    .paragrafo-gradiente{
+        margin-left:80px;
+        font-size: 10px;
+
+    }
+    .h3-banner{
+        left: 10px;
+        bottom: 5px;
+
+ }
+}
+
+@media(max-width:270px)
+{
+    .responsive{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left:-20em;
+
+    }
+
+    .texto-gradiente{
+
+        font-size: 1.5em;
+        margin-left: 135px;
+    }
+    .paragrafo-gradiente{
+        margin-left:100px;
+        font-size: 8px;
+
+    }
+    .h3-banner{
+        left: 10px;
+        bottom: 5px;
+
+ }
+}
+
+
+
+
+
