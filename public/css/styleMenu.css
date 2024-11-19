@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+
 
   }
 
@@ -252,23 +252,29 @@
     }
   }
 
-  /* Home topo */
+  /* Home Banner */
 
+  .containner{
+    height: 420px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+  }
 
   .h3-banner{
+
     overflow-y: hidden;
-    position: absolute;
-    font-size: 1.9em;
+    font-size: 2.7em;
     font-weight: bold;
     margin-top: 2em;
-    margin-left: 12em;
+    margin-left: 6em;
     word-wrap: break-word;
   }
   .texto-gradiente {
-    overflow-y: hidden;
-    position: absolute;
-    left: 4.4em;
-    font-size: 4.4em;
+    overflow: hidden;
+    margin-left: 2em;
+    font-size: 5.5em;
     font-weight: bold;
 
     text-transform: uppercase;
@@ -280,10 +286,9 @@
   }
 
   .paragrafo-gradiente{
-    position: absolute;
-    left: 13em;
     margin-top: 1em;
-    font-size: 1.5em;
+    font-size: 1.8em;
+    margin-left: 6em;
     background-image: linear-gradient(#214E0E,#3A7D1A,#56B92D);
     background-clip: text;
     -webkit-background-clip:text ;
@@ -291,213 +296,133 @@
 
   }
 
-  .dog-image{
-    max-width: 100%;
-    position: absolute;
-    bottom: 24em;
+  .capsula{
+    overflow: hidden;
+    width: 550px;
+    height: 400px;
+    background: linear-gradient(#214E0E,#3A7D1A,#56B92D);
+    border-radius: 160px 0px 0px 160px;
+    margin-top: 1em;
+    margin-right: -10px;
   }
 
 
+  .img-dog{
+    height: 400px;
+    width: 500px;
 
-  .botao-explore {
-    position: absolute;
+  }
+
+  .botao-medicamentos {
     background-color: #2DA475;
     color: white;
     border: none;
-    padding: 0.8rem 4rem;
+    padding: 0.9rem 5rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin-top: 2em;
-    margin-left: 20em;
-    font-size: 10px;
+    margin-top: 4em;
+    margin-left: 12em;
+    font-size: 11px;
     cursor: pointer;
     border-radius:100px;
   }
 
-  .texto-gradiente, .paragrafo-gradiente, .h3-banner,.botao-explore {
-    position: relative;
-
-    z-index: 1;
-  }
-
-  .botao-explore:hover {
+  .botao-medicamentos:hover {
     background-color: #3e8e41;
 
   }
 
-  @media (max-width: 1100px) {
-    .dog-image {
-      display: none; /* Esconde a imagem completamente */
-    }
+  .botao-acessorios{
+    position: absolute;
+    background-color: #2DA475;
+    color: white;
+    border: none;
+    padding: 0.8rem 6rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2em;
+    margin-left: 5em;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius:100px;
   }
- @media(max-width:800px){
-    .responsive{
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        margin-left:-20em;
 
-    }
- }
+  .botao-acessorios:hover {
+    background-color: #3e8e41;
 
- @media(max-width:624px){
-    .responsive{
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        margin-left:-20em;
+  }
 
-    }
+  .navbar, .botao-medicamentos, .botao-acessorios {
+    position: relative;
 
-    .texto-gradiente{
+    z-index: 1;
+  }
+/* Fim banner home */
 
-        font-size: 3em;
-        margin-left: 120px;
-    }
-    .paragrafo-gradiente{
-        margin-left:60px;
-    }
 
-    .h3-banner{
-        left: 30px;
-        bottom: 5px;
-    }
-
- }
-
- @media(max-width:482px){
-    .responsive{
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        margin-left:-20em;
-
-    }
-
-    .texto-gradiente{
-
-        font-size: 2.6em;
-        margin-left: 127px;
-    }
-    .paragrafo-gradiente{
-        margin-left:43px;
-    }
-
-    .h3-banner{
-        left: 40px;
-        bottom: 5px;
-    }
- }
-
- @media(max-width:482px){
-    .responsive{
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        margin-left:-20em;
-
-    }
-
-    .texto-gradiente{
-
-        font-size: 2.6em;
-        margin-left: 90px;
-    }
-    .paragrafo-gradiente{
-        margin-left:10px;
-    }
-
-    .h3-banner{
-        left: 23px;
-        bottom: 5px;
-
- }
+/* Home Carroucel */
+.carrocel{
+    margin-top: 2em;
+}
+.icone{
+    height: 300px;
 }
 
-@media(max-width:395px)
-{
-    .responsive{
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        margin-left:-20em;
-
-    }
-
-    .texto-gradiente{
-
-        font-size: 2em;
-        margin-left: 120px;
-    }
-    .paragrafo-gradiente{
-        margin-left:35px;
-        font-size: 13px;
-
-
-
-    }
-
-    .h3-banner{
-        left: 23px;
-        bottom: 5px;
-
- }
+.seta-direita{
+    position: sticky;
+    margin-top:2em;
+    margin-left: 6em;
 }
 
-@media(max-width:341px)
-{
-    .responsive{
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        margin-left:-20em;
+.seta-esquerda{
+    position: sticky;
+    margin-top: 2.4em;
+    margin-right: 4.7em;
+}
+.div-arredondada {
+    background: linear-gradient(#214E0E,#3A7D1A,#56B92D);
+    border-radius: 40px;
+    margin-left: 0.4em;
+    padding: 30px;
+    text-align: center;
+    width: 99%;
+    height: 220px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    color: white;
+    font-size: 24px;
+  }
 
-    }
+/* Fim home Carroucel */
 
-    .texto-gradiente{
+/* Storys home */
 
-        font-size: 1.5em;
-        margin-left: 145px;
-    }
-    .paragrafo-gradiente{
-        margin-left:80px;
-        font-size: 10px;
+.container{
+    background-color: blue;
+    margin-top: 2em;
 
-    }
-    .h3-banner{
-        left: 10px;
-        bottom: 5px;
-
- }
 }
 
-@media(max-width:270px)
-{
-    .responsive{
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        margin-left:-20em;
-
-    }
-
-    .texto-gradiente{
-
-        font-size: 1.5em;
-        margin-left: 135px;
-    }
-    .paragrafo-gradiente{
-        margin-left:100px;
-        font-size: 8px;
-
-    }
-    .h3-banner{
-        left: 10px;
-        bottom: 5px;
-
- }
+.story{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid green;
+    padding: 2px;
 }
+
+.storys-texto{
+    font-size: 10pxp;
+}
+
+/*  Fim Storys home */
+
+/* media-home */
+
+
+
+/* end-media-home */
 
 
 
